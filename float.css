@@ -1,0 +1,66 @@
+h1 {
+  text-align: center;
+  background-color: beige;
+}
+
+#page1,
+#page2 {
+  box-sizing: border-box;
+  background-color: lightblue;
+  border: 1px black solid;
+  width: 49%;
+  height: 88vh;
+  display: inline-block;
+  padding: 1em;
+}
+
+#page2 {
+  float: right;
+}
+
+h2 {
+  text-align: center;
+}
+
+.hillary {
+  width: 30%;
+  text-align: center;
+}
+
+.hillary,
+#p-first-block {
+  display: inline-block;
+}
+
+#p-first-block {
+  width: 60%;
+  float: right;
+}
+
+a {
+  text-decoration: none;
+  color: blueviolet;
+}
+
+.moon {
+  width: 30%;
+}
+
+.yoon {
+  width: 33.6%;
+}
+
+#p-second-block {
+  width: 65%;
+  float: right;
+}
+
+.yoon,
+#last-paragraph {
+  display: inline;
+}
+
+#last-paragraph {
+  width: 66%;
+  float: left;
+}
