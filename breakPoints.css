@@ -1,0 +1,196 @@
+h1 {
+  text-align: center;
+  background-color: beige;
+}
+
+.usa {
+  animation: title-move 4s ease 0.1s infinite normal;
+}
+
+.usa strong {
+  border-radius: 50%;
+  animation: title-background 4s ease 0.1s infinite normal;
+}
+
+.korea {
+  animation: text-color-korea 4s ease 0.1s infinite;
+}
+
+.korea strong {
+  animation: text-color-korea-strong 4s ease 0.1s infinite;
+}
+
+#page1,
+#page2 {
+  box-sizing: border-box;
+  background-color: lightblue;
+  border: 1px black solid;
+  width: 49%;
+  height: 100%;
+  display: inline-block;
+  padding: 1%;
+  margin: 0;
+}
+
+#page2 {
+  float: right;
+}
+
+h2 {
+  text-align: center;
+  padding: 0;
+}
+
+.hillary {
+  width: 30%;
+}
+
+.hillary,
+#p-first-block {
+  display: inline-block;
+}
+
+#p-first-block {
+  width: 60%;
+  float: right;
+}
+
+a {
+  text-decoration: none;
+  color: blueviolet;
+}
+
+.moon {
+  width: 30%;
+}
+
+.yoon {
+  width: 33.6%;
+}
+
+#p-second-block {
+  width: 65%;
+  float: right;
+}
+
+.yoon,
+#last-paragraph {
+  display: inline;
+}
+
+#last-paragraph {
+  width: 66%;
+  float: left;
+}
+
+@media screen and (max-width: 1100px) {
+  .image {
+    width: 100%;
+  }
+
+  #p-first-block,
+  #p-second-block,
+  #last-paragraph {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #page1,
+  #page2 {
+    width: 100%;
+    margin: 1% 0;
+  }
+
+  .hillary {
+    width: 30%;
+  }
+
+  .hillary,
+  #p-first-block {
+    display: inline-block;
+  }
+
+  #p-first-block {
+    width: 60%;
+    float: right;
+  }
+
+  .moon {
+    width: 30%;
+  }
+
+  .yoon {
+    width: 33.6%;
+  }
+
+  #p-second-block {
+    width: 65%;
+    float: right;
+  }
+
+  .yoon,
+  #last-paragraph {
+    display: inline;
+  }
+
+  #last-paragraph {
+    width: 66%;
+    float: left;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .image {
+    width: 100%;
+  }
+
+  #p-first-block,
+  #p-second-block,
+  #last-paragraph {
+    width: 100%;
+  }
+}
+
+@keyframes title-move {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-5px);
+  }
+  40% {
+    transform: translateY(0);
+  }
+  60% {
+    transform: translateX(5px);
+  }
+  80% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-5px);
+  }
+}
+
+@keyframes title-background {
+  100% {
+    background-color: rgb(255, 225, 0);
+    box-shadow: 0 0 20pt goldenrod;
+  }
+}
+
+@keyframes text-color-korea {
+  80% {
+    color: lightblue;
+  }
+  100% {
+    color: lightblue;
+  }
+}
+
+@keyframes text-color-korea-strong {
+  100% {
+    color: red;
+  }
+}
