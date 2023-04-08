@@ -1,0 +1,62 @@
+body {
+  background-color: black;
+}
+
+img {
+  width: 100%;
+  border-radius: 55%;
+  box-shadow: 0 0 40pt rgba(192, 255, 221, 0.81);
+  transition: ease;
+  transition-duration: 1s;
+  transition-delay: 0.1s;
+}
+
+div {
+  position: absolute;
+  width: 33%;
+  height: 45%;
+
+  top: 28%;
+  left: 35%;
+  border-radius: 55%;
+}
+
+.gradient {
+  background: -webkit-radial-gradient(
+    center,
+    ellipse cover,
+    rgba(255, 255, 255, 0.55) 0%,
+    rgba(0, 0, 0, 0.55) 52%,
+    rgba(255, 255, 255, 0.55) 100%
+  );
+  pointer-events: none;
+}
+
+.caption {
+  width: 15%;
+  height: 25%;
+
+  top: 37%;
+  left: 44%;
+  text-align: center;
+  border-radius: 55%;
+  transition: ease;
+  transition-duration: 3s;
+}
+
+span {
+  display: block;
+  padding: 15px;
+}
+
+img:hover {
+  transform: rotate(360deg);
+  box-shadow: 0 0 40pt red;
+}
+
+.caption:hover {
+  text-shadow: 0 0 5px red;
+  font-weight: bolder;
+
+  transform: translateY(10px);
+}
